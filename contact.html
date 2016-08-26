@@ -26,25 +26,33 @@
 
     <div class="container">
       <div class="jumbotron jumbo-back">
-        <h1>Contacts!</h1>
-        <p>
-          I want to contact you so good.
-        </p>
+        <div class="row">
+          <h1>Contacts!</h1>
+          <p>
+            I want to contact you so good.
+          </p>
+        </div>
         <form action="http://formspree.io/militoj@gmail.com" method="POST">
           <div class="form-group">
-            <h5>Your email</h5>
-            <input class="form-control" type="email" style="width: 336px" name="_replyto">
-            <h5>Your comment</h5>
-            <textarea class="form-control" style="height: 136px; width: 336px" name="body"></textarea>
-            <br>
-              <input class="btn btn-primary btn-lg" type="submit" value="Send">
-            </br>
-            <input type="text" name="_gotcha" style="display:none" />
-            <input type="hidden" name="_next" value="thanks-contact.html" />
+            <label>Your email</label>
+            <div class="row">
+              <input class="form-control" type="email" class="col-sm-4" name="_replyto">
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group">
+              <label>Your comment</label>
+              <textarea class="form-control" class="col-sm-4" name="body"></textarea>
+            </div>
+          </div>
+          <div class="row">
+            <input class="btn btn-primary btn-lg" type="submit" value="Send">
+          </div>
+          <input type="text" name="_gotcha" style="display:none" />
+          <input type="hidden" name="_next" value="thanks-contact.html" />
           </div>
         </form>
       </div>
-    </div>
 
   </body>
 
